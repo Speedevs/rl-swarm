@@ -19,7 +19,7 @@ Your hardware requirements will vary depending on a number of factors including 
 
 **Supported Hardware**
 
-- arm64 or x86 CPU with minimum 32gb ram (note that if you run other applications during training it might crash training).
+- arm64 or x86 CPU or x64 with minimum 32gb ram (note that if you run other applications during training it might crash training).
 
 
 OR
@@ -185,6 +185,10 @@ Therefore, you should do these actions in the following scenarios
 - **I have multiple GPUs on one machine, can I run multiple peers?**: Yes - but you'll need to manually change things. You'll need to isolate each GPU, install this repo for each GPU, and expose each peer under a different port to pass the modal onboard.
 
 - **My round/stage is behind the smart contract/other peers?**: This is expected behaviour given the different speeds of machines in the network. Once your machine completes it's current round, it will move to the the current round.
+
+- - **Issues with python installation?**
+
+    - Try this `sudo apt install python3 python3-pip python3-venv python3-dev -y`
 
 - **I want to use a bigger and/or different model in the RL swarm, can I do that?**: Yes - but we only recommend doing so if you are comfortable understanding what size model can reasonably run on your hardware.  If you elect to bring a custom model, just paste the repo/model name into the command line when prompted.
 
