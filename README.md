@@ -172,7 +172,9 @@ Therefore, you should do these actions in the following scenarios
 - **Issues with npm/general installation?**
 
     - Try  `npm install -g node@latest`
-
+      or 
+    - Try `sudo apt install -y nodejs`
+    - 
 - **OOM errors on MacBook?**
     - Try this (experimental) fix to increase memory:
         ```
